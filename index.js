@@ -8,13 +8,13 @@ client.on('ready', async () => {
     const channel = await client.channels.fetch(process.env.BUMP_CHANNEL)
     
     async function bump() {
-        await channel.sendSlash('302050872383242240', 'bump')
+        await channel.sendSlash('1028956609382199346', 'bump')
         console.count('Bumped!')
     }
 
     function loop() {
         // Prevent Detection
-        var randomNum = Math.round(Math.random() * (9000000 - 7200000 + 1)) + 7200000
+        var randomNum = Math.round(Math.random() * (7260000 - 7200000 + 1)) + 7200000
         setTimeout(function () {
             bump()
             loop()
